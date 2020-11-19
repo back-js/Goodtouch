@@ -4,7 +4,7 @@ import base64
 from io import BytesIO
 
 import sys
-sys.path.insert(0, 'C:/Users/s_ois/PycharmProjects/goodtouch/modules/PS/')
+sys.path.insert(0, 'C:/Users/s_ois/PycharmProjects/goodtouch/modules/PSGAN/')
 from demo import main
 
 def image_upload_view(request):

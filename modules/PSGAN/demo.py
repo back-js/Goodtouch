@@ -10,7 +10,7 @@ import faceutils as futils
 from psgan import PostProcess
 from setup import setup_config, setup_argparser
 import os
-os.chdir('C:/Users/s_ois/PycharmProjects/goodtouch/modules/PS/')
+os.chdir('C:/Users/s_ois/PycharmProjects/goodtouch/modules/PSGAN/')
 def main(source_path,reference_path):
     parser = setup_argparser()
 
