@@ -1,12 +1,65 @@
-<form method="post" enctype="multipart/form-data">
-  {% csrf_token %}
-   {{ form.as_p }}
-  <button type="submit">Upload</button>
-</form>
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>화장비빔밥</title>
 
-{% if img_obj %}
-  <h3>Succesfully uploaded : {{img_obj.country}}에 사는 {{img_obj.age}}살 여성</h3>
-  <img src="{{ img_obj.image1.url}}" alt="connect" style="max-height:300px">
-  <img src="{{ img_obj.image2.url}}" alt="connect" style="max-height:300px">
-  <img src="{{ image }}" alt="connect" style="max-height:300px">
-{% endif %}
+    <!-- Bootstrap core CSS -->
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+
+</head>
+<body class="text-center">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand"><img src="{% static "img/toplogo.png" %}" alt="My company" height="50" width="50">    화장 비빔밥</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">홈</a>
+                <a class="nav-link" href="#">화장법</a>
+                <a class="nav-link" href="#">커뮤니티</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">원클릭 화장체험</h1>
+        <p class="lead">어떻게 해드릴까요 ?
+        <p class="lead">"이렇게 해주세요."</p>
+        <p class="lead">
+            <a href="makeup" class="btn btn-lg btn-secondary">화장 체험하기</a>
+        </p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>made by<a href="https://getbootstrap.com/">이십사나이</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

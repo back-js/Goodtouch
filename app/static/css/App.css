@@ -1,0 +1,168 @@
+/* .App {
+  text-align: center;
+} */
+
+/* First Page CSS */
+/* ############################################ */
+.firstpage{
+  text-align : center;
+}
+
+.top_logo {
+  margin-top:5.75%;
+  height: 12%;
+  width: 7.5%;
+}
+
+.text1_1 {
+  height: 5.31%;
+  margin-top:2.08%;
+  color: rgba(0,0,0,0.8);
+  font-family: "Adobe 고딕 Std B";
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1.67px;
+  line-height: 40px;
+}
+
+.text1_2{
+  height: 9.29%;
+  color: rgba(0,0,0,0.8);
+  margin-top:5.62%;
+  font-family: "Adobe 고딕 Std B";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.start_button{
+  Background-color : #FF5353;
+  border-radius:30px;
+  height: 13.27%;
+  width: 33.13%;
+  margin-top : 7.56%;
+}
+
+
+.botton_text1 {
+  color: rgba(0,0,0,0.8);
+  font-family: "Adobe 고딕 Std B";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.67px;
+  line-height: 30px;
+  text-align: center;
+  color : white;
+}
+
+.botton_text2{
+  height: 2.65%;
+  color: white;
+  font-family: "Adobe 고딕 Std B";
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1.11px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.bottom_logo {
+  margin-top:3.05%;
+}
+
+/* Second Page */
+/* ############################################ */
+
+
+.sectionwrapper {
+  display:flex;
+  flex-wrap:wrap;
+  height:100%;
+  position:static;
+  justify-content: center;
+}
+
+.column {
+  flex-basis: 450px;
+  flex-grow:1;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  margin : 5%;
+  max-width:450px;
+  height:auto;
+}
+
+
+.column .top {
+  align-self:flex-start;
+}
+
+.column .top p{
+  width:100%;
+  margin-left:30px;
+  margin-top:20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.column .bottom {
+  align-self:flex-end;
+  position:relative;
+  padding-top: 75%;
+  width: 75%;
+  height: 0;
+  margin-bottom:20%;
+  margin-right:20%;
+}
+
+.column .bottom input {
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: #FFF;
+  border: 2px solid #828282;
+  /* margin-left:30%;
+  margin-top : 30%;
+  margin-bottom : 20%;
+  margin-right: 20%; */
+  position : absolute;
+  top: 10%;
+  left: 20%;
+
+  width:100%;
+  height: 100%;
+  padding:0;
+}
+
+
+.two2three_button{
+  height: 86.33px;
+  width: 278px;
+  border-radius: 6px;
+  background-color: #FB6969;
+  position: relative;
+  left:50%;
+  transform:translate(-50%, -50%);
+  margin-top:5%;
+  }
+
+.text2_3{
+  color: white;
+  font-family: "Adobe 고딕 Std B";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.67px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Third Page */
+/* ############################################ */
+
+
+

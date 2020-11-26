@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>화장 비빔밥</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/App.css' %}">
+</head>
+<body>
+
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+     <div class="sectionwrapper">
+        <div class="column">
+            <div class="top">
+                <p>내 사진</p>
+            </div>
+            <div class="bottom">
+                <input type="file" accept="image/*" src = "{% static "img/button_img.png" %}" name="source_image" class="column1_button" style="max-height:450px" />
+            </div>
+        </div>
+        <div class="column">
+            <div class="top">
+                <p>화장 사진</p>
+            </div>
+            <div class="bottom">
+                <input type="file" src = "{% static "img/button_img.png" %}" name="reference_image" class="column2_button"/>
+            </div>
+        </div>
+    </div>
+    <button class="two2three_button" type="submit">
+        <p class="text2_3">결과보기</p>
+    </button>
+</form>
+
+{% if img_obj %}
+    <div class="sectionwrapper">
+        <div class="column">
+            <div class="top">
+                <p>결과</p>
+            </div>
+            <div class="bottom">
+                <input type="image" src="{{ img_result }}"  class="column1_button" style="max-height:450px" />
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+</body>

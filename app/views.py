@@ -14,13 +14,19 @@ def image_upload_view(request):
             form.save()
             img_obj = form.instance
 
-            image = main(img_obj.image1,img_obj.image2)
+            result_image = main(img_obj.source_image,img_obj.reference_image)
             output = BytesIO()
-            image.save(output, format='JPEG')
+            result_image.save(output, format='JPEG')
             im_data = output.getvalue()
             data_url = 'data:image/jpg;base64,' + base64.b64encode(im_data).decode()
 
-            return render(request, 'index.html', {'form': form, 'img_obj': img_obj, 'image':data_url})
+            return render(request, 'makeup.html', {'form': form, 'img_obj': img_obj, 'img_result':data_url})
     else:
         form = ImageForm()
-    return render(request, 'index.html', {'form': form})
+    return render(request, 'makeup.html', {'form': form})
+
+def index(request):
+    return render(request, 'index.html')
+
+def index2(request):
+    return render(request, 'make.html')

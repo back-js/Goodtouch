@@ -1,5 +1,7 @@
 import argparse
 from pathlib import Path
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 from PIL import Image
 from psgan import Inference
