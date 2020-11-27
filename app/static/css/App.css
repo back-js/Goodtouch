@@ -2,6 +2,13 @@
   text-align: center;
 } */
 
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+
 /* First Page CSS */
 /* ############################################ */
 .firstpage{
@@ -144,11 +151,12 @@
   height: 86.33px;
   width: 278px;
   border-radius: 6px;
-  background-color: #FB6969;
+  background-color: #fc0000;
   position: relative;
   left:50%;
   transform:translate(-50%, -50%);
   margin-top:5%;
+  padding-top: 16px;
   }
 
 .text2_3{

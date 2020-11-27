@@ -6,6 +6,7 @@
     <title>화장 비빔밥</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/App.css' %}">
+
 </head>
 <body>
 
@@ -14,15 +15,15 @@
      <div class="sectionwrapper">
         <div class="column">
             <div class="top">
-                <p>내 사진</p>
+                <p>화장 전</p>
             </div>
             <div class="bottom">
-                <input type="file" accept="image/*" src = "{% static "img/button_img.png" %}" name="source_image" class="column1_button" style="max-height:450px" />
+                <input type="file"  src = "{% static "img/button_img.png" %}" name="source_image" class="column1_button" style="max-height:450px" accept="image/*" onchange="loadFile(event)"/>
             </div>
         </div>
         <div class="column">
             <div class="top">
-                <p>화장 사진</p>
+                <p>원하는 화장</p>
             </div>
             <div class="bottom">
                 <input type="file" src = "{% static "img/button_img.png" %}" name="reference_image" class="column2_button"/>
@@ -38,13 +39,22 @@
     <div class="sectionwrapper">
         <div class="column">
             <div class="top">
-                <p>결과</p>
+                <p>화장 후</p>
             </div>
             <div class="bottom">
-                <input type="image" src="{{ img_result }}"  class="column1_button" style="max-height:450px" />
+                <input type="image" src="{{ img_result }}"  class="column1_button" style="max-height:450px" accept="image/*" onchange="loadFile"/>
             </div>
         </div>
     </div>
 {% endif %}
 
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) // free memory
+    }
+  };
+</script>
 </body>

@@ -20,26 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2124753e-4492-440c-98fe-a4ea30063fce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/static/css/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/make.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/goodtouch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/goodtouch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/makeup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/makeup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goodtouch/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/goodtouch/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/PSGAN/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/modules/PSGAN/demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/cover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/bottom-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/button_img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/img/toplogo.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -68,7 +66,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -79,6 +77,9 @@
   </component>
   <component name="RunManager" selected="Django Server.goodtouch">
     <configuration name="make.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/goodtouch/app/templates/make.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="makeup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/goodtouch/app/templates/makeup.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -129,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.makeup.html" />
         <item itemvalue="JavaScript Debug.make.html" />
         <item itemvalue="Python.test" />
       </list>
@@ -157,7 +159,7 @@
       <workItem from="1606353024603" duration="282000" />
       <workItem from="1606354035156" duration="225000" />
       <workItem from="1606354500211" duration="6935000" />
-      <workItem from="1606370187934" duration="10719000" />
+      <workItem from="1606370187934" duration="19472000" />
     </task>
     <servers />
   </component>
@@ -181,50 +183,64 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="512" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1605460277168" />
-    <state x="2674" y="-57" key="FileChooserDialogImpl" timestamp="1606358775041">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state x="2674" y="-57" key="FileChooserDialogImpl/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606358775041" />
-    <state x="603" y="149" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605764852911" />
-    <state width="1280" height="306" key="GridCell.Tab.0.bottom" timestamp="1606380571242">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380571242" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605597787133" />
-    <state width="1280" height="306" key="GridCell.Tab.0.center" timestamp="1606380571240">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="306" key="GridCell.Tab.0.center/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380571240" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605597787133" />
-    <state width="1280" height="306" key="GridCell.Tab.0.left" timestamp="1606380571240">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="306" key="GridCell.Tab.0.left/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380571240" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605597787133" />
-    <state width="1280" height="306" key="GridCell.Tab.0.right" timestamp="1606380571240">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="306" key="GridCell.Tab.0.right/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380571240" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605597787133" />
-    <state width="1280" height="298" key="GridCell.Tab.1.bottom" timestamp="1606376033953">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="298" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033953" />
-    <state width="1280" height="298" key="GridCell.Tab.1.center" timestamp="1606376033952">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="298" key="GridCell.Tab.1.center/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033952" />
-    <state width="1280" height="298" key="GridCell.Tab.1.left" timestamp="1606376033952">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="298" key="GridCell.Tab.1.left/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033952" />
-    <state width="1280" height="298" key="GridCell.Tab.1.right" timestamp="1606376033953">
-      <screen x="1920" y="-245" width="1920" height="1040" />
-    </state>
-    <state width="1280" height="298" key="GridCell.Tab.1.right/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033953" />
-    <state x="326" y="89" width="981" height="707" key="SettingsEditor" timestamp="1605745768226">
+    <state x="603" y="149" key="FileChooserDialogImpl" timestamp="1606471290291">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="2674" y="-57" key="FileChooserDialogImpl/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606358775041" />
+    <state x="603" y="149" key="FileChooserDialogImpl/0.0.1536.824/1920.-546.1920.1040@0.0.1536.824" timestamp="1606471290291" />
+    <state x="603" y="149" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605764852911" />
+    <state width="1493" height="307" key="GridCell.Tab.0.bottom" timestamp="1606473150511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="2005" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399692013" />
+    <state width="1280" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380992764" />
+    <state width="1493" height="307" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-546.1920.1040@0.0.1536.824" timestamp="1606473150511" />
+    <state width="1282" height="266" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606384646593" />
+    <state width="1493" height="307" key="GridCell.Tab.0.center" timestamp="1606473150510">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="2005" height="266" key="GridCell.Tab.0.center/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399692013" />
+    <state width="1280" height="306" key="GridCell.Tab.0.center/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380992764" />
+    <state width="1493" height="307" key="GridCell.Tab.0.center/0.0.1536.824/1920.-546.1920.1040@0.0.1536.824" timestamp="1606473150510" />
+    <state width="1282" height="266" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606384646593" />
+    <state width="1493" height="307" key="GridCell.Tab.0.left" timestamp="1606473150510">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="2005" height="266" key="GridCell.Tab.0.left/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399692013" />
+    <state width="1280" height="306" key="GridCell.Tab.0.left/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380992764" />
+    <state width="1493" height="307" key="GridCell.Tab.0.left/0.0.1536.824/1920.-546.1920.1040@0.0.1536.824" timestamp="1606473150510" />
+    <state width="1282" height="266" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606384646593" />
+    <state width="1493" height="307" key="GridCell.Tab.0.right" timestamp="1606473150511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="2005" height="266" key="GridCell.Tab.0.right/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399692013" />
+    <state width="1280" height="306" key="GridCell.Tab.0.right/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606380992764" />
+    <state width="1493" height="307" key="GridCell.Tab.0.right/0.0.1536.824/1920.-546.1920.1040@0.0.1536.824" timestamp="1606473150511" />
+    <state width="1282" height="266" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606384646593" />
+    <state width="2005" height="374" key="GridCell.Tab.1.bottom" timestamp="1606399668569">
+      <screen x="1920" y="-143" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399668569" />
+    <state width="1280" height="298" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033953" />
+    <state width="2005" height="374" key="GridCell.Tab.1.center" timestamp="1606399668568">
+      <screen x="1920" y="-143" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="374" key="GridCell.Tab.1.center/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399668568" />
+    <state width="1280" height="298" key="GridCell.Tab.1.center/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033952" />
+    <state width="2005" height="374" key="GridCell.Tab.1.left" timestamp="1606399668568">
+      <screen x="1920" y="-143" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="374" key="GridCell.Tab.1.left/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399668568" />
+    <state width="1280" height="298" key="GridCell.Tab.1.left/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033952" />
+    <state width="2005" height="374" key="GridCell.Tab.1.right" timestamp="1606399668568">
+      <screen x="1920" y="-143" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="374" key="GridCell.Tab.1.right/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606399668568" />
+    <state width="1280" height="298" key="GridCell.Tab.1.right/0.0.1536.824/1920.-245.1920.1040@1920.-245.1920.1040" timestamp="1606376033953" />
+    <state x="2355" y="-23" width="981" height="707" key="SettingsEditor" timestamp="1606398431312">
+      <screen x="1920" y="-143" width="2048" height="1112" />
+    </state>
+    <state x="2355" y="-23" key="SettingsEditor/0.0.1536.824/1920.-143.2048.1112@1920.-143.2048.1112" timestamp="1606398431312" />
     <state x="326" y="89" key="SettingsEditor/0.0.1536.824/1920.-370.1152.2008@0.0.1536.824" timestamp="1605727837021" />
     <state x="326" y="89" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605745768226" />
   </component>
