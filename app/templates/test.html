@@ -1,0 +1,38 @@
+import React, {Component} from 'react';
+//import Navigation from "./Navigation";
+import 'C:\\Users\\User\\react-todo\\src\\App.css';
+import HandleFile from './HandleFile';
+
+class SecondPage extends Component{
+
+    render(){
+      return(
+        <article>
+          {/* <Navigation></Navigation> */}
+          <div class="sectionwrapper">
+            <div class="column">
+              <div class="top">
+                <p>내 사진</p>
+              </div>
+              <div class="bottom">
+                <HandleFile></HandleFile>
+              </div>
+            </div>
+            <div class="column">
+              <div class="top">
+                <p>화장 사진</p>
+              </div>
+              <div class="bottom">
+                <HandleFile></HandleFile>
+              </div>
+            </div>
+          </div>
+          <button class="two2three_button">
+            <p class="text2_3">결과보기</p>
+          </button>
+        </article>
+      );
+    }
+  }
+
+  export default SecondPage;

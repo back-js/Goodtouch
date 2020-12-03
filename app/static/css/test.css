@@ -2,17 +2,13 @@
   text-align: center;
 } */
 
-
-.cover-container {
-  max-width: 42em;
-}
-
-
-
 /* First Page CSS */
 /* ############################################ */
 .firstpage{
   text-align : center;
+  height:100%;
+  width : 100%;
+
 }
 
 .top_logo {
@@ -26,7 +22,7 @@
   margin-top:2.08%;
   color: rgba(0,0,0,0.8);
   font-family: "Adobe 고딕 Std B";
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 1.67px;
   line-height: 40px;
@@ -37,10 +33,10 @@
   color: rgba(0,0,0,0.8);
   margin-top:5.62%;
   font-family: "Adobe 고딕 Std B";
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.5px;
-  line-height: 30px;
+  letter-spacing: 0.3rem;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -56,7 +52,7 @@
 .botton_text1 {
   color: rgba(0,0,0,0.8);
   font-family: "Adobe 고딕 Std B";
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.67px;
   line-height: 30px;
@@ -68,7 +64,7 @@
   height: 2.65%;
   color: white;
   font-family: "Adobe 고딕 Std B";
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1.11px;
   line-height: 20px;
@@ -128,15 +124,11 @@
   margin-right:20%;
 }
 
-.column .bottom img {
+.coulumn .bottom .img{
   box-sizing: border-box;
   border-radius: 6px;
   background-color: #FFF;
   border: 2px solid #828282;
-  /* margin-left:30%;
-  margin-top : 30%;
-  margin-bottom : 20%;
-  margin-right: 20%; */
   position : absolute;
   top: 10%;
   left: 20%;
@@ -146,15 +138,11 @@
   padding:0;
 }
 
-.column .bottom input {
+.profile_preview{
   box-sizing: border-box;
   border-radius: 6px;
   background-color: #FFF;
   border: 2px solid #828282;
-  /* margin-left:30%;
-  margin-top : 30%;
-  margin-bottom : 20%;
-  margin-right: 20%; */
   position : absolute;
   top: 10%;
   left: 20%;
@@ -162,20 +150,19 @@
   width:100%;
   height: 100%;
   padding:0;
+  z-index: 1;
 }
-
 
 
 .two2three_button{
   height: 86.33px;
   width: 278px;
   border-radius: 6px;
-  background-color: #ff0000;
+  background-color: #FB6969;
   position: relative;
   left:50%;
   transform:translate(-50%, -50%);
   margin-top:5%;
-  padding-top: 16px;
   }
 
 .text2_3{
@@ -190,8 +177,6 @@
 
 /* Third Page */
 /* ############################################ */
-
-
 
 
 
