@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>화장 비빔밥</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/App.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+</head>
+
+<body class="text-center">
+    <div class="page_width d-flex mx-auto flex-column">
+        <header class="masthead">
+            <div class="inner">
+                <h3 class="masthead-brand"><img src="{% static "img/toplogo.png" %}" alt="My company" height="50" width="50">    화장 비빔밥</h3>
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" onclick="location.href='{% url 'index' %}'">홈</a>
+                    <a class="nav-link" href="#">화장법</a>
+                    <a class="nav-link" href="#">커뮤니티</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <div class="sectionwrapper mx-auto">
+        <div class="result_column">
+            <div class="top">
+                <p>내 사진</p>
+            </div>
+            <div class="bottom">
+                <input type="image" src="media/{{ img_obj.source_image }}"  class="column1_button"accept="image/*" />
+            </div>
+        </div>
+        <div class="result_column">
+            <div class="top">
+                <p>화장 사진</p>
+            </div>
+            <div class="bottom">
+                <input type="image" src="media/{{ img_obj.reference_image }}"  class="column1_button" accept="image/*" />
+            </div>
+        </div>
+    </div>
+
+
+
+{% if img_obj %}
+    <div class="sectionwrapper mx-auto">
+        <div class="column2">
+            <div class="top">
+                <p>화장 결과</p>
+            </div>
+            <div class="bottom">
+                <input type="image" src="{{ img_result }}"  class="column1_button" accept="image/*" />
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+    <div class="column3">
+        <span class="star-input">
+            <output for="star-input"><b>0</b>점</output>
+            <span class="input">
+                <input type="radio" name="star-input" value="1" id="p1">
+                <label for="p1">1</label>
+                <input type="radio" name="star-input" value="2" id="p2">
+                <label for="p2">2</label>
+                <input type="radio" name="star-input" value="3" id="p3">
+                <label for="p3">3</label>
+                <input type="radio" name="star-input" value="4" id="p4">
+                <label for="p4">4</label>
+                <input type="radio" name="star-input" value="5" id="p5">
+                <label for="p5">5</label>
+            </span>
+            <p class="Thank_text">화장이 잘 되었나요?</p>
+            <button class="star_submit" type="submit" onclick="alert('감사합니다.')">
+                <p>확인</p>
+            </button>
+        </span>
+    </div>
+    <button class="two2three_button" type="submit" onclick="location.href='{% url 'makeup' %}'">
+        <p class="text2_3">다시하기</p>
+    </button>
+    <script src="{% static "js/jquery-1.11.3.min.js" %}"></script>
+    <script src="{% static "js/star.js" %}"></script>
+</body>
+

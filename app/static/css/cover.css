@@ -26,20 +26,22 @@ a:hover {
 
 html,
 body {
-  height: 100%;
   background-color: #ffffff;
+
 }
 
 body {
-  display: -ms-flexbox;
-  display: flex;
   color: #070700;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgb(255, 255, 255);
+  margin:0;
+  padding:0;
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 45em;
+  position:relative;
+  min-height:100%;
 }
 
 
@@ -52,6 +54,10 @@ body {
 
 .masthead-brand {
   margin-bottom: 0;
+}
+
+.inner{
+  padding-top: 5%;
 }
 
 .nav-masthead .nav-link {
@@ -91,6 +97,8 @@ body {
  */
 .cover {
   padding: 0 1.5rem;
+  padding-bottom:2.9em
+  
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -103,4 +111,57 @@ body {
  */
 .mastfoot {
   color: rgba(0, 0, 0, 0.5);
+  height:100%;
+}
+
+.age24{
+  padding-bottom: 5%;
+}
+
+.logo_img{
+  display:none;
+}
+
+.bottom_img{
+  display:none;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .cover-container{
+    background-color: #f2f2f2;
+  }
+
+  .masthead{
+    display:none;
+  }
+
+  .background_range{
+    border: 0;
+    padding: 0; 
+    background-image:url('img/background_x1.png');
+    min-height: 100%;
+    background-position: top;
+    background-size: cover;
+  }
+
+  .logo_img{
+    display:block;
+    padding-top:5%;
+    text-align: center;
+  }
+
+  .bottom_img{
+    display:block;
+    text-align: center;
+    max-height: 150px;
+    overflow: hidden;
+  }
+  
+  .bottom_img img{
+    max-height: initial;
+    margin-top: 2%;
+    min-width: 480px;
+  }
+
 }

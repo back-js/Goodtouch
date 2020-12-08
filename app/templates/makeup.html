@@ -3,55 +3,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>화장 비빔밥</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/App.css' %}">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-    <script>
-        $('#event').submit(function(e){
-            e.preventDefault();
-            url = $(this).attr('action') # to get url
-            data = $(this).serialize(); # for sending form data
-            $.post(url, data, function(response){
-                # do whatever you want with response(data)
-                    })
-        })
-    </script>
-
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
 </head>
-<body>
-<form method="post" enctype="multipart/form-data" id="event" >
-  {% csrf_token %}
-     <div class="sectionwrapper">
+<body class="text-center">
+<div class="page_width d-flex mx-auto flex-column">
+    <header class="masthead">
+        <div class="inner">
+            <h3 class="masthead-brand justify-content-center"><img src="{% static "img/toplogo.png" %}" alt="My company" height="50" width="50">    화장 비빔밥</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" onclick="location.href='{% url 'index' %}'">홈</a>
+                <a class="nav-link" href="#">화장법</a>
+                <a class="nav-link" href="#">커뮤니티</a>
+            </nav>
+        </div>
+    </header>
+</div>
+<form action="{% url 'result' %}" method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <div class="sectionwrapper">
         <div class="column">
             <div class="top">
-                <p>화장 전</p>
+                <p>내 사진</p>
             </div>
             <div class="bottom">
-                <p>
+                <div class="button">
                     <label for="file">
-                        <img src = "{% static "img/button_img.png" %}" id="output" style="width:100%  border-style: inherit;" onclick="$('file').click();" />
-                        <input type="file" name="source_image" id="file"  onchange="loadFile(event)"  accept="image/*" style="display:none" />
+                        <img src="{% static "img/button_img1.png" %}" id="output"  onclick="$('file').click();" />
+                        <input type="file" name="source_image" id="file"  onchange="loadFile(event)"  accept="image/*" style="display:none"/>
                     </label>
-                </p>
+                </div>
             </div>
         </div>
         <div class="column">
             <div class="top">
-                <p>원하는 화장</p>
+                <p>화장 사진</p>
             </div>
             <div class="bottom">
-                <p>
+                <div class="button">
                     <label for="file2">
-                        <img src = "{% static "img/button_img.png" %}" id="output2" style="width:100%  border-style: inherit;" onclick="$('file2').click();" />
-                        <input type="file" name="reference_image" id="file2"  onchange="loadFile2(event)"  accept="image/*" style="display:none" />
+                        <img src="{% static "img/button_img2.png" %}" id="output2"  onclick="$('file2').click();" />
+                        <input type="file" name="reference_image" id="file2"  onchange="loadFile2(event)"  accept="image/*" style="display:none"/>
                     </label>
-                </p>
+                </div>
             </div>
         </div>
     </div>
-    <button class="two2three_button" type="submit" >
+    <button class="two2three_button" type="submit" onclick="location.href='result'">
         <p class="text2_3">결과보기</p>
     </button>
 </form>
@@ -65,21 +66,9 @@ var loadFile2 = function(event) {
 	var image = document.getElementById('output2');
 	image.src = URL.createObjectURL(event.target.files[0]);
 };
+
 </script>
 
-
-{% if img_obj %}
-    <div class="sectionwrapper">
-        <div class="column">
-            <div class="top">
-                <p>화장 후</p>
-            </div>
-            <div class="bottom">
-                <input type="image" src="{{ img_result }}"  class="column1_button" style="max-height:450px" accept="image/*" />
-            </div>
-        </div>
-    </div>
-{% endif %}
 
 </body>
 
